@@ -7,5 +7,5 @@ import org.mcqueen.cloud.admin.gateway.service.RouteService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RouteServiceImpl extends ServiceImpl<RouteMapper,Route> implements RouteService {
+public class RouteServiceImpl extends ServiceImpl<RouteMapper, Route> implements RouteService {
 }

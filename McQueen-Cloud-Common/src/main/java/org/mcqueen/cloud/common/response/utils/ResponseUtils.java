@@ -7,16 +7,17 @@ import java.util.List;
 
 /**
  * 响应处理工具类
+ *
  * @author McQueen
  * @version 1.0
  */
 public class ResponseUtils {
 
-    private ResponseUtils(){
+    private ResponseUtils() {
 
     }
 
-    public static String buildSuccessResultOnlyMessage(String message){
+    public static String buildSuccessResultOnlyMessage(String message) {
         return JSONObject.toJSONString(
                 new ResponseResult()
                         .setCode(200)
@@ -24,7 +25,7 @@ public class ResponseUtils {
         );
     }
 
-    public static String buildSuccessResultWithArrayData(String message, List<?> data){
+    public static String buildSuccessResultWithArrayData(String message, List<?> data) {
         return JSONObject.toJSONString(
                 new ResponseResult()
                         .setCode(200)
@@ -33,7 +34,7 @@ public class ResponseUtils {
         );
     }
 
-    public static String buildFailedResultOnlyMessage(String message){
+    public static String buildFailedResultOnlyMessage(String message) {
         return JSONObject.toJSONString(
                 new ResponseResult()
                         .setMessage(message)

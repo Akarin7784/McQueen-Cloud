@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @PostMapping("/login")
-    public String login(){
+    public String login() {
         return "login success";
     }
 }

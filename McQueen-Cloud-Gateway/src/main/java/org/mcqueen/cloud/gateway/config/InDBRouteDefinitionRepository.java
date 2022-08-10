@@ -1,13 +1,10 @@
 package org.mcqueen.cloud.gateway.config;
 
 import org.mcqueen.cloud.gateway.service.GatewayRouteService;
-import org.mcqueen.cloud.gateway.service.impl.DynamicRouteServiceImpl;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinitionRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import javax.annotation.Resource;
 
 public class InDBRouteDefinitionRepository implements RouteDefinitionRepository {
 

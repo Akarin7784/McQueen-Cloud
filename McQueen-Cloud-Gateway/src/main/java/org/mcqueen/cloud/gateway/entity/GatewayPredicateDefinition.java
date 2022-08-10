@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * 路由断言模型
+ *
  * @author McQueen
  */
 @Data
@@ -16,5 +17,5 @@ public class GatewayPredicateDefinition {
     private String name;
 
     // 断言对应的规则
-    private Map<String,String> args = new LinkedHashMap<>();
+    private Map<String, String> args = new LinkedHashMap<>();
 }

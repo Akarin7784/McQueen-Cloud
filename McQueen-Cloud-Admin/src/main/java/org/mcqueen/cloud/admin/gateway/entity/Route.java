@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 
 /**
  * 路由信息实体类
+ *
  * @author McQueen
  * @version 1.0
  */
@@ -22,7 +23,7 @@ import java.sql.Timestamp;
 public class Route implements Serializable {
 
     // 主键ID
-    @TableId(value = "id",type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private String id;
 
     // 路由名称

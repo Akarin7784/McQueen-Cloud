@@ -13,18 +13,8 @@ spring:
       discovery:
         group: DEFAULT_GROUP
         namespace: d137f157-5ca7-4fc9-83f2-636fba47c665
-    gateway:
-      routes:
-        - id: admin-service
-          uri: lb://admin-service
-          predicates:
-            - Path=/admin/**
-          filters:
-            - StripPrefix=1
-
-        - id: "c2"
-          uri: "https://www.taobao.com"
-          predicates:
-            - Path=/taobao/**
-          filters:
-            - StripPrefix=1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * 路由过滤器模型
+ *
  * @author McQueen
  */
 @Data
@@ -16,6 +17,6 @@ public class GatewayFilterDefinition {
     private String name;
 
     // 过滤器规则
-    private Map<String,String> args = new LinkedHashMap<>();
+    private Map<String, String> args = new LinkedHashMap<>();
 
 }

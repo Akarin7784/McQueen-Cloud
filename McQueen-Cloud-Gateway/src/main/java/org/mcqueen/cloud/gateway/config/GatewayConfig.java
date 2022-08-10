@@ -19,7 +19,7 @@ public class GatewayConfig {
     @Bean
     @ConditionalOnBean(GatewayRouteService.class)
     @ConditionalOnMissingBean(RouteDefinitionRepository.class)
-    public InDBRouteDefinitionRepository inDBRouteDefinitionRepository(GatewayRouteService gatewayRouteService){
+    public InDBRouteDefinitionRepository inDBRouteDefinitionRepository(GatewayRouteService gatewayRouteService) {
         return new InDBRouteDefinitionRepository(gatewayRouteService);
     }
 

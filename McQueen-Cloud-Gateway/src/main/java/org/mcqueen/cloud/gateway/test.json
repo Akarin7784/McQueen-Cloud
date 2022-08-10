@@ -1,0 +1,21 @@
+{
+  "id": "admin-service",
+  "predicates": [
+    {
+      "name": "Path",
+      "args": {
+        "_genkey_0": "/admin/**"
+      }
+    }
+  ],
+  "filters": [
+    {
+      "name": "StripPrefix",
+      "args": {
+        "_genkey_0": "1"
+      }
+    }
+  ],
+  "uri": "lb://admin-service",
+  "order": 0
+}
