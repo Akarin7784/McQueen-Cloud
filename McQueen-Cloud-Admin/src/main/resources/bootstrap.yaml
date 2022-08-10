@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: admin-service
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        namespace: d137f157-5ca7-4fc9-83f2-636fba47c665
+        group: DEFAULT_GROUP
+        file-extension: yaml
+      discovery:
+        namespace: d137f157-5ca7-4fc9-83f2-636fba47c665
+        group: DEFAULT_GROUP
