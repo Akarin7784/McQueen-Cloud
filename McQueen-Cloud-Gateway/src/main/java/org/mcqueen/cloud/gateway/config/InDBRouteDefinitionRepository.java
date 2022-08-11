@@ -6,6 +6,10 @@ import org.springframework.cloud.gateway.route.RouteDefinitionRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+/**
+ * 配置自定义路由配置数据源
+ * @author McQueen
+ */
 public class InDBRouteDefinitionRepository implements RouteDefinitionRepository {
 
     private final GatewayRouteService gatewayRouteService;

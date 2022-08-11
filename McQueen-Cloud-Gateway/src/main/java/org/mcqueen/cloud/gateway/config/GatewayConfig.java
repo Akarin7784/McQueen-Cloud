@@ -11,6 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 
+/**
+ * 注入自定义路由配置数据源
+ * @author McQueen
+ */
 @Configuration
 @AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE + 5)
 @AutoConfigureBefore(GatewayAutoConfiguration.class)
@@ -22,6 +26,5 @@ public class GatewayConfig {
     public InDBRouteDefinitionRepository inDBRouteDefinitionRepository(GatewayRouteService gatewayRouteService) {
         return new InDBRouteDefinitionRepository(gatewayRouteService);
     }
-
 
 }

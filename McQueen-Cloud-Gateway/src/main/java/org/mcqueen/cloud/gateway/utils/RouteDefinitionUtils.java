@@ -11,12 +11,24 @@ import org.springframework.cloud.gateway.route.RouteDefinition;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 路由网关信息转换工具
+ * @author McQueen
+ */
 public class RouteDefinitionUtils {
 
+    /**
+     * 屏蔽无参构造器
+     */
     private RouteDefinitionUtils() {
 
     }
 
+    /**
+     * 描述：用于将数据库中存储的GatewayRouteDefinition转化为RouteDefinition
+     * @param gatewayRouteDefinition 数据库中存储的网关信息
+     * @return routeDefinition Gateway框架中定义的网关信息
+     */
     public static RouteDefinition assembleRouteDefinition(GatewayRouteDefinition gatewayRouteDefinition) {
         // 声明一个路由定义信息
         RouteDefinition routeDefinition = new RouteDefinition();

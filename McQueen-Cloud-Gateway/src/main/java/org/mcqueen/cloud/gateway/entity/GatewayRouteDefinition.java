@@ -10,7 +10,6 @@ import java.util.Map;
 
 /**
  * 网关路由模型
- *
  * @author McQueen
  */
 @Data
@@ -34,5 +33,8 @@ public class GatewayRouteDefinition {
 
     // 路由执行的顺序
     private int order = 0;
+
+    // 路由是否生效
+    private boolean enable;
 
 }

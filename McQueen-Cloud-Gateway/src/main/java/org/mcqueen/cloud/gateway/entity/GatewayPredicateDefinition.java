@@ -7,7 +7,6 @@ import java.util.Map;
 
 /**
  * 路由断言模型
- *
  * @author McQueen
  */
 @Data
