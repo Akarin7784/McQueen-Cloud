@@ -10,6 +10,7 @@ import java.util.Map;
 
 /**
  * 网关路由模型
+ *
  * @author McQueen
  */
 @Data

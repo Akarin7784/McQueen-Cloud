@@ -13,6 +13,7 @@ import java.util.List;
 
 /**
  * 路由网关信息转换工具
+ *
  * @author McQueen
  */
 public class RouteDefinitionUtils {
@@ -26,6 +27,7 @@ public class RouteDefinitionUtils {
 
     /**
      * 描述：用于将数据库中存储的GatewayRouteDefinition转化为RouteDefinition
+     *
      * @param gatewayRouteDefinition 数据库中存储的网关信息
      * @return routeDefinition Gateway框架中定义的网关信息
      */
